@@ -1,7 +1,11 @@
+import javax.crypto.NoSuchPaddingException;
+import java.io.IOException;
+import java.security.InvalidKeyException;
+import java.security.NoSuchAlgorithmException;
 import java.util.Scanner;
 
 public class menu {
-    public static void menu () {
+    public static void menu () throws NoSuchPaddingException, NoSuchAlgorithmException, IOException, InvalidKeyException {
         Scanner kb = new Scanner(System.in);
         System.out.println("Please input an option to select: ");
         System.out.println(" 1: Encrypt the file \n 2: Decrypt the file \n 3: Exit");
